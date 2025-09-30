@@ -8,8 +8,32 @@ Our goal is to investigate the trade-offs in accuracy, efficiency, and communica
 # Features
 - Vertical data partitioning of CIFAR-10 and CIFAR-100 datasets.  
 - Support for **VGG-SNN** and **Spiking ResNet** with model spiliting and without model spiliting.
- # Install dependencies directly
-pip install torch torchvision numpy scikit-learn
+  # RUN
+   - # dependencies 
+ torch torchvision numpy scikit-learn
+ 
+  # Arguments:
+
+--dataset : cifar10 | cifar100 (default: cifar100)
+
+--model : vggsnn | sresnet (default: vggsnn)
+
+--clients : number of vertical clients (default: 2)
+
+--epochs : override number of epochs
+
+--batch_size : override batch size
+
+--timesteps : override number of SNN timesteps
+
+--lr : override learning rate
+
+--momentum : override SGD momentum
+
+--weight_decay : override weight decay
+
+--leak_mem : override SNN membrane leak parameter
+
 # Default (CIFAR-100, VGG-SNN, 2 clients):
 python vfl_train_test.py
 # Common options:
