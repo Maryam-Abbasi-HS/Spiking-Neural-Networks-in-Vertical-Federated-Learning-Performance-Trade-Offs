@@ -10,13 +10,9 @@ Our goal is to investigate the trade-offs in accuracy, efficiency, and communica
 - Support for **VGG-SNN** and **Spiking ResNet** with model spiliting and without model spiliting.
  # Install dependencies directly
 pip install torch torchvision numpy scikit-learn
-Default (CIFAR-100, VGG-SNN, 2 clients):
-
+# Default (CIFAR-100, VGG-SNN, 2 clients):
 python vfl_train_test.py
-
-
-Common options:
-
+# Common options:
 python vfl_train_test.py \
   --dataset cifar10            # or cifar100 (default)
   --model sresnet              # or vggsnn (default)
@@ -26,5 +22,6 @@ python vfl_train_test.py \
   --timesteps 8                # SNN timesteps
   --lr 0.01 --momentum 0.9 --weight_decay 1e-4 --leak_mem 0.95
   
-Ackonwledgements: 
+# Ackonwledgements: 
+
 The code is **adapted from [HFL-SNN (Horizontal Federated Learning with Spiking Neural Networks)](https://github.com/Intelligent-Computing-Lab-Panda/FedSNN)**
