@@ -1,7 +1,7 @@
 # Spiking-Neural-Networks-in-Vertical-Federated-Learning-Performance-Trade-Offs
 
 
-This repository contains the official code implementation of the paper **"Spiking Neural Networks in Vertical Federated Learning: Performance Trade-Offs"**.  
+This repository contains the code implementation of the paper **"Spiking Neural Networks in Vertical Federated Learning: Performance Trade-Offs"**.  
 
 Our goal is to investigate the trade-offs in accuracy, efficiency, and communication cost when applying **Spiking Neural Networks (SNNs)** in VFL setups.
 
