@@ -8,11 +8,11 @@ Our goal is to investigate the trade-offs in accuracy, efficiency, and communica
 # Features
 - Vertical data partitioning of CIFAR-10 and CIFAR-100 datasets.  
 - Support for **VGG-SNN** and **Spiking ResNet** with model spiliting and without model spiliting.
-  # RUN
+# RUN
    - # dependencies 
  torch torchvision numpy scikit-learn
  
-  # Arguments:
+  - # Arguments:
 
 --dataset : cifar10 | cifar100 (default: cifar100)
 
@@ -34,9 +34,9 @@ Our goal is to investigate the trade-offs in accuracy, efficiency, and communica
 
 --leak_mem : override SNN membrane leak parameter
 
-# Default (CIFAR-100, VGG-SNN, 2 clients):
+- # Default (CIFAR-100, VGG-SNN, 2 clients):
 python vfl_train_test.py
-# Common options:
+- # Common options:
 python vfl_train_test.py \
   --dataset cifar10            # or cifar100 (default)
   --model sresnet              # or vggsnn (default)
